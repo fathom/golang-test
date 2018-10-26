@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+  golang-cli:
+    image: golang:1.9
+    container_name: golang-cli
+    volumes:
+      - ./src:/go/src
+    working_dir: /go/src
+    tty: true
